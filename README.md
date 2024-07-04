@@ -1,5 +1,5 @@
 
-# BREAST-CANCER DETECTION USING 1D CONVOLUTIONAL NEURAL NETWORK WITH INTERSECTION OVER UNION TECHNOLOGIE
+# BREAST-CANCER DETECTION 
 <a name="readme-top"></a>
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -66,14 +66,6 @@ Our solution involves a systematic process of evaluating different wavelength se
 To enhance the efficiency of our approach, we implemented different machine learning models using the LazyPredict library, ultimately choosing SMIO, Linear Regression, Glmnet, and PLSregression to predict the concentration of the chemical compound.
 </div>
 
-## Built In Technologie
-There are numerous technologies employed in this project, focusing on the most crucial ones:
-
-* [![Django][Django.com]][Django-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- GETTING STARTED -->
@@ -86,29 +78,6 @@ _The project's concept may seem sophisticated, but the steps for getting started
    ```
    git clone https://github.com/bouslama-hamza/CHEMOMETRICS.git
    ```
-
-3. Navigate to the project directory:
-   ```
-   cd Real Time Web/
-   ```
-
-4. Install Django packages:
-   ```
-   pip install -r requirements.txt
-   ```
-
-5. Make migrations to set up the database:
-   ```
-    python manage.py makemigrations
-   ``` 
-   ```
-    python manage.py migrate
-   ```
-
-6. Run the server:
-   ```
-    python manage.py runserver
-    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
