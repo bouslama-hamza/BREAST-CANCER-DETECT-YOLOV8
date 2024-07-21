@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="#">
-    <img src="./Images/logo.png" alt="Logo" width="300">
+    <img src="Images/logo.png" alt="Logo" width="300">
   </a>
 
   <h3 align="center">Breast Cancer Detection Using 1D Convolutional Neural Network with Intersection Over Union Technologie</h3>
@@ -30,40 +30,57 @@
 ## About The Project
 <div align="justify">
 Breast cancer remains a leading cause of mortality among women worldwide, underscoring the critical need for accurate and early detection methods. This project presents a novel approach for breast cancer detection using the YOLOv8 segmentation model, leveraging its advanced object detection capabilities to identify malignant regions in medical images. Our approach involves training the YOLOv8 model on a comprehensive dataset of annotated breast cancer images, employing various data augmentation techniques to enhance model robustness. The proposed method demonstrates superior performance in terms of precision, recall, and intersection-over-union (IoU) metrics, achieving an accuracy of 96%.
+</div>
+<br>
 
 <div align="center">
-<a href="#">
-    <img src="./Images/recommendation.png" alt="Logo" width="450">
+  <a href="#">
+    <img src="Images/bresat-cancer.png" alt="Logo" width="450">
   </a>
 </div>
 
+<br>
+<div align="justify">
 This solution addresses the limitations of existing detection methods by providing a more accurate and efficient approach to identifying malignant regions in breast cancer images. By focusing on key spectral features, we can improve the model's performance and interpretability.
-
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Project Context
+<div align="justify">
+Our solution involves a comprehensive analysis of the spectral features of breast cancer images, enabling us to identify key characteristics that distinguish malignant regions from benign tissue. By leveraging the YOLOv8 segmentation model,
+</div>
 <div align="center">
     <a href="#">
-    <img src="./Images/concept.png" alt="Logo">
+    <img src="Images/concept.png" alt="Logo">
   </a>
 </div>
 <br>
 <div align="justify">
-Our solution involves a systematic process of evaluating different wavelength selection methods, such as genetic algorithms, interval partial least squares (iPLS), and successive projections algorithm (SPA). Following the KDD process, we first preprocess the data by normalizing the spectral data and splitting it into training and test sets. We then apply the wavelength selection methods to identify the most informative wavelengths for each model.
+ we can accurately detect and classify malignant regions in medical images, providing a valuable tool for early cancer detection and diagnosis. Our approach combines advanced machine learning techniques with domain-specific knowledge to enhance the accuracy and efficiency of breast cancer detection, ultimately improving patient outcomes and reducing healthcare costs.
 </div>
 
 ## Project Architecture
 
 <div align="center">
     <a href="#">
-        <img src="./Images/image.png" alt="Logo">
+        <img src="Images/architecture.png" alt="Logo">
      </a>
 </div>
 <br>
 <div align="justify">
-To enhance the efficiency of our approach, we implemented different machine learning models using the LazyPredict library, ultimately choosing SMIO, Linear Regression, Glmnet, and PLSregression to predict the concentration of the chemical compound.
+Our solution leverages the YOLOv8 segmentation model to detect malignant regions in breast cancer images, enabling accurate and efficient diagnosis of the disease. By training the model on a comprehensive dataset of annotated images, we can improve its performance and robustness, achieving superior accuracy and precision in detecting cancerous regions. Our approach involves preprocessing the images to enhance their quality and extract key spectral features, enabling the model to identify malignant regions with high accuracy. By combining advanced machine learning techniques with domain-specific knowledge, we can develop a powerful tool for early cancer detection and diagnosis, improving patient outcomes and reducing healthcare costs.
+</div>
+
+## Project Results
+<div align="justify">
+Our solution demonstrates superior performance in terms of accuracy, precision, and recall, achieving an accuracy rate of 96% in detecting malignant regions in breast cancer images. example result can be seen in the following image.
+</div>
+
+<div align="center">
+    <a href="#">
+        <img src="Images/result.png" alt="Logo">
+     </a>
 </div>
 
 
@@ -76,8 +93,35 @@ _The project's concept may seem sophisticated, but the steps for getting started
 1. Ensure that a connection is established.
 2. Clone the repository:
    ```
-   git clone https://github.com/bouslama-hamza/CHEMOMETRICS.git
+   git clone https://github.com/bouslama-hamza/ BREAST-CANCER-DETECT-YOLOv8.git
    ```
+3. Install the required packages:
+    ```
+   pip install ultralytics
+   ```
+4. Run the code:
+    ```python
+   # Import the necessary libraries
+   from ultralytics import YOLO
+   from IPython.display import Image
+    # Load the YOLO model
+   model = YOLO('path/to/your/yolov8.pt')
+    # Make predictions on an image
+   model.predict(
+        source='/your/source/path',
+        show=True,
+        save=True,
+        hide_labels=False,
+        conf=0.5,
+        save_txt=False,
+        save_crop=False,
+        line_thickness=2,
+    )
+    # Display the image
+    Image(filename='your/source/path', width=500)
+    ```
+  
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,20 +146,14 @@ Project Link: [https://github.com/bouslama-hamza/CHEMOMETRICS.git](https://githu
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/bouslama-hamza/BREAST-CANCER-DETECT-YOLOV8/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/bouslama-hamza/BREAST-CANCER-DETECT-YOLOV8/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/bouslama-hamza/BREAST-CANCER-DETECT-YOLOV8/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/bouslama-hamza/BREAST-CANCER-DETECT-YOLOV8/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-url]: https://github.com/bouslama-hamza/BREAST-CANCER-DETECT-YOLOV8/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/hamza-bouslama
-[Django.com]:https://img.shields.io/badge/Django-0769AD?style=for-the-badge&logo=django&logoColor=white
-[Django-url]:https://www.djangoproject.com/
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com
