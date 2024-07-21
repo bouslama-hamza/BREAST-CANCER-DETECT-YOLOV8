@@ -139,7 +139,7 @@ Contributions are what make the open source community such an amazing place to l
 
 Hamza Bouslama - [Gmail Account](ham.bousa98@gmail.com)
 
-Project Link: [https://github.com/bouslama-hamza/CHEMOMETRICS.git](https://github.com/bouslama-hamza/CHEMOMETRICS.git)
+Project Link: [https://github.com/bouslama-hamza/BREAST-CANCER-DETECT-YOLOV8.git](https://github.com/bouslama-hamza/BREAST-CANCER-DETECT-YOLOV8.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
